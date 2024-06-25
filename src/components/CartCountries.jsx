@@ -2,6 +2,7 @@ import { getData } from "../utils/fetchData"
 import { useState } from "react"
 import { useEffect } from "react"
 
+
 export default function CartCountries() {
     const [image,setimage]= useState(null)
   
@@ -12,25 +13,26 @@ useEffect(()=>{
 },[])
     return(
     <>
-     <div className="card">
-        {
-            image?.map((x,i)=>{
-                return (
-<>
-  <img src={x.flags.png} key={i} className="card-img-top" alt="..."/>
-  <div className="card-body">
+<div className="cantaners">
+  {
+    image?.map((x,i)=>{
+      return(
+        <>
+      <div className="cardsf">
+      <img src={x.flags.png} key={i} className="card-img-top sizePick" alt="..."/>
+      <h5 className="">name: {x.name.common}</h5> 
+      <p className="card-text">population:{x.population}</p>
+    <p className="card-text">region:{x.region}</p>
+    <p className="card-text">capita:{x.capital}</p>
 
-    
-    <h5 className="card-title">ll</h5> 
-    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" className="btn btn-primary">Go somewhere</a>
-  </div>
-</>
-                )
-            })
-        }
-</div>
+    </div>
 
+        </>
+      )
+       })
+       
+      }
+      </div>
     </>
     )
 }

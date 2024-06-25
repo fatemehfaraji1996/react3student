@@ -1,4 +1,49 @@
+.parentBox{
+  /* width: 200px; */
+  /* height: auto; */
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.cantaners{
+  margin-left: auto;
+  margin-right:auto ;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  /* background-color:rgb(227, 184, 199); */
+  gap: 30px;
+  /* display: flex; */
+  /* padding: 20px;
+  margin: 20px; */
+  /* flex-direction:column; */
+
+  /* gap: 15px; */
+  /* justify-content: center; */
+}
+.cardsf{
+
+  /* display: flex; */
+  width: 250px;
+  height: auto;
+  /* background-color: aqu/a; */
+}
+
+
+
+/* .gap{
+gap: 20px;
+display: flex;
+
+} */
 .sizePick{
   height: 150px;
-  width: 150px;
+  width: 250px;
 }
+/* .color{
+  color: rgb(38, 181, 41);
+} */
