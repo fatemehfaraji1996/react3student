@@ -1,7 +1,4 @@
-.parentBox{
-  /* width: 200px; */
-  /* height: auto; */
-}
+
 *{
   margin: 0px;
   padding: 0px;
@@ -15,35 +12,63 @@
   justify-content: center;
   width: 90%;
   height: auto;
-  /* background-color:rgb(227, 184, 199); */
   gap: 30px;
-  /* display: flex; */
-  /* padding: 20px;
-  margin: 20px; */
-  /* flex-direction:column; */
-
-  /* gap: 15px; */
-  /* justify-content: center; */
+  margin: 30px;
+  position: relative;
 }
 .cardsf{
-
-  /* display: flex; */
   width: 250px;
   height: auto;
-  /* background-color: aqu/a; */
 }
-
-
-
-/* .gap{
-gap: 20px;
-display: flex;
-
-} */
 .sizePick{
   height: 150px;
   width: 250px;
 }
-/* .color{
-  color: rgb(38, 181, 41);
-} */
+/* nav component */
+.nav{
+  height: 60px;
+  width: 100%;
+  background-color: rgb(210, 231, 224);
+  box-shadow: 10px 5px 5px rgb(233, 210, 210);
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  
+
+}
+.text{
+  margin: 10px;
+  font-size: large;
+}
+.self{
+  position: absolute;
+  right: 5%;
+
+}
+.input{
+
+  width: 30%;
+  margin: 40px;
+  box-shadow: 10px 5px 5px rgb(233, 210, 210);
+}
+.parentInputDrowp{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  
+  
+}
+.styledrowp{
+  width: 30%;
+  margin: 40px;
+  position: absolute;
+  right: -15%;
+
+}
+.dropdown{
+  height: 25px;
+  width: 75px;
+  position: absolute;
+  right: 30px;
+  top: -80px;
+}
