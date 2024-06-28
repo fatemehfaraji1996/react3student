@@ -11,11 +11,6 @@ useEffect(()=>{
   })
 },[])
 const [serch,setserch]=useState("")
-// const [selectedContinent, setSelectedContinent] = useState('');
-// const handleContinentChange = (event,value) => {
-//  setSelectedContinent(value);
-
-//  };
 const [selectedContinent, setSelectedContinent] = useState('');
 const handleContinentChange = (event) => {
   setSelectedContinent(event.target.value);
@@ -28,7 +23,6 @@ const handleContinentChange = (event) => {
             <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="serch for country..." onChange={(e)=>setserch(e.target.value)}/>
         </div>
         </div>
-      
 <div className="cantaners">
   <select onChange={handleContinentChange} className="dropdown">
         <option value="All">All</option>
@@ -45,13 +39,12 @@ const handleContinentChange = (event) => {
       :item.name.common.toLocaleLowerCase().includes(serch)
     })
     .filter((x)=>{
-     return selectedContinent === x.region
-      ? x 
-      :null
-    // 
-    // return selectedContinent == "All"
-    // ? true
-    // :selectedContinent === x.region
+    //  return selectedContinent === x.region
+    //   ? x 
+    //   :null
+    return selectedContinent == "All"
+    ? true
+    :selectedContinent === x.region
     
     })
     .map((x,i)=>{
