@@ -2,6 +2,7 @@ import { getData } from "../utils/fetchData"
 import { useState } from "react"
 import { useEffect } from "react"
 import Nav from "./nav"
+import { Link,NavLink } from "react-router-dom"
 const g = ["Africa","Europa","Oceania","Americas","Asia"]
 export default function CartCountries() {
     const [image,setimage]= useState(null)
@@ -50,14 +51,15 @@ const handleContinentChange = (event) => {
     .map((x,i)=>{
       return(
         <>
+      <Link to="/Country" className="linkStyle">
       <div className="cardsf">
-      
       <img src={x.flags.png} key={i} className="card-img-top sizePick" alt="..."/>
-      <h5 className="">name: {x.name.common}</h5> 
-      <p className="card-text">population:{x.population}</p>
-    <p className="card-text">region:{x.region}</p>
-    <p className="card-text">capital:{x.capital}</p>
+      <h5 key={i}className="">name: {x.name.common}</h5> 
+      <p  key={i} className="card-text">population:{x.population}</p>
+    <p  key={i} className="card-text">region:{x.region}</p>
+    <p  key={i} className="card-text">capital:{x.capital}</p>
     </div>
+    </Link>
         </>
       )
        })
