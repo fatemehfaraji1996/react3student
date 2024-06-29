@@ -11,7 +11,7 @@ useEffect(()=>{
   })
 },[])
 const [serch,setserch]=useState("")
-const [selectedContinent, setSelectedContinent] = useState('');
+const [selectedContinent, setSelectedContinent] = useState('All');
 const handleContinentChange = (event) => {
   setSelectedContinent(event.target.value);
 };
