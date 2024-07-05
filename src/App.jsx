@@ -8,14 +8,14 @@ export default function App() {
 
   return (
     <>
+    {/* <CartCountries></CartCountries> */}
      <BrowserRouter>
-     {/* <Links></Links> */}
      <Routes>
-         <Route path ="/other" element={<CartCountries/>}></Route>
+         <Route path ="/" element={<CartCountries/>}></Route>
          <Route path ="/Country" element={<Links/>}></Route>
      </Routes>
      </BrowserRouter>
-
+   
 
 
     {/* <CartCountries/> */}

@@ -19,19 +19,19 @@ const handleContinentChange = (event) => {
     return(
     <>
     <Nav></Nav>
-    <div className="input">
-        <div className="input-group input-group-lg">
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="serch for country..." onChange={(e)=>setserch(e.target.value)}/>
+    <div key={12} className="input">
+        <div key={13} className="input-group input-group-lg">
+            <input key={14} type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="serch for country..." onChange={(e)=>setserch(e.target.value)}/>
         </div>
         </div>
-<div className="cantaners">
-  <select onChange={handleContinentChange} className="dropdown">
-        <option value="All">All</option>
-        <option value="Asia">Asia</option>
-        <option value="Europe">Europe</option>
-        <option value="Africa">Africa</option>
-        <option value="Oceania">Oceania</option>
-        <option value="Americas">Americas</option>
+<div key={0} className="cantaners">
+  <select key={11} onChange={handleContinentChange} className="dropdown">
+        <option key={1} value="All">All</option>
+        <option key={2} value="Asia">Asia</option>
+        <option key={3} value="Europe">Europe</option>
+        <option key={4} value="Africa">Africa</option>
+        <option key={5} value="Oceania">Oceania</option>
+        <option key={6} value="Americas">Americas</option>
       </select>
   {
     image?.filter((item)=>{
@@ -52,7 +52,7 @@ const handleContinentChange = (event) => {
       return(
         <>
       <Link to="/Country" className="linkStyle">
-      <div className="cardsf">
+      <div key={i} className="cardsf">
       <img src={x.flags.png} key={i} className="card-img-top sizePick" alt="..."/>
       <h5 key={i}className="">name: {x.name.common}</h5> 
       <p  key={i} className="card-text">population:{x.population}</p>
